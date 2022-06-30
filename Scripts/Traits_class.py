@@ -467,7 +467,7 @@ class segmented_image:
         measure={}
         # Standard length body length 
         measure['SL'] = self.get_distance(landmark['1'],landmark['6'])
-        measure['EA'] = self.measure_eye_area()
+        measure['EA'] = int(self.measure_eye_area())
         measure['HAt'] = self.calculate_triangle_area(landmark['1'],landmark['2'],landmark['13'])
         measure['HAp'] = self.measure_head_area()
         measure['HCL'] = "WIP"
